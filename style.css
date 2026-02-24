@@ -10,16 +10,25 @@ body {
   color: #333;
 }
 
+ 
 .hero {
-  background: #022B3A;
+  height: 50vh;
+  width: 100vw;
+  background-image: url('img/fundo3.svg');
+  background-position: inherit;
+  background-size: cover;
   color: #fff;
   text-align: center;
   padding: 80px 20px;
+  
+ 
 }
+
 
 .hero h1 {
   font-size: 2rem;
   margin-bottom: 20px;
+  
 }
 
 .hero p {
