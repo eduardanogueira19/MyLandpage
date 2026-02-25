@@ -10,6 +10,16 @@ body {
   color: #333;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1.5s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
  
 .hero {
   height: 50vh;
@@ -77,6 +87,15 @@ li{
     transition: 0.7s;
 }
 
+iframe {
+  width: 100%;
+  height: 1080px;
+  border: none;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+
+}
+
 .cta {
   background: #022B3A;
   color: #fff;
@@ -99,6 +118,18 @@ footer {
 
   .hero {
     height: 100vh;
-}
+  }
+
+
+  iframe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 650px;
+    border: none;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
   
 }
