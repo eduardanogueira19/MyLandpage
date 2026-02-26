@@ -26,10 +26,8 @@ body {
 .hero {
   height: 50vh;
   width: 100vw;
-  background-image: url('img/fundo3.svg');
-  background-position: inherit;
-  background-size: cover;
-  color: #fff;
+  background: #022B3A;
+  color: #f9f9f9;
   text-align: center;
   padding: 80px 20px;
   
@@ -40,7 +38,8 @@ body {
 .hero h1 {
   font-size: 2rem;
   margin-bottom: 20px;
-  
+ 
+
 }
 
 .hero p {
@@ -49,7 +48,7 @@ body {
 }
 
 .btn {
-  background: #fff;
+  background: #f9f9f9;
   color: #022B3A;
   padding: 12px 20px;
   text-decoration: none;
@@ -76,7 +75,7 @@ li{
 }
 
 .card {
-  background: #fff;
+  background: #f9f9f9;
   padding: 30px;
   border-radius: 8px;
   width: 250px;
@@ -85,7 +84,7 @@ li{
 
 .card:hover{
     background-color: #022B3A;
-    color: #fff;
+    color: #f9f9f9;
     transition: 0.7s;
 }
 .photo {
@@ -97,9 +96,9 @@ li{
   padding: 15px 15px 25px 15px;
   margin: 20px auto; 
   background-color: #022b3a;
-  border-radius: 130px;
-  color: #fff;
-  width: 90vw;
+  color: #f9f9f9;
+  border-radius: 25px;
+  width: 100%;
   flex-wrap: wrap;
 }
 
@@ -107,26 +106,72 @@ li{
   max-width: 600px;
   text-align: left;
 }
+
 #myphoto {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   margin-top: 20px;
-  border: #ffff 2px solid;
+  border: #f9f9f9 2px solid;
 }
 
-iframe {
-  width: 100%;
-  height: 1080px;
-  border: none;
-  border-radius: 8px;
-  border: 1px solid #ddd;
+.portfolio {
+  background-color: #022B3A;
+  padding: 60px 20px;
+  text-align: center;
+  color: #fff;
+}
 
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.portfolio-card {
+  width: 60%;
+  margin: auto;
+  background: #f9f9f9;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+  color:#022B3A;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-8px);
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.portfolio-card h3 {
+  margin: 15px 0 5px;
+}
+
+.portfolio-card p {
+  font-size: 14px;
+  padding: 0 15px;
+}
+
+.portfolio-card a {
+  display: inline-block;
+  margin: 15px 0 20px;
+  padding: 10px 20px;
+  background: #022B3A;
+  color: #f9f9f9;
+  border-radius: 30px;
+  text-decoration: none;
 }
 
 .cta {
   background: #022B3A;
-  color: #fff;
+  color: #f9f9f9;
   text-align: center;
   padding: 60px 20px;
 }
@@ -137,9 +182,23 @@ iframe {
 }
 
 footer {
+  display: flex;
+  justify-content: space-between;
   text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
+  padding: 5px 60px;
+}
+
+.insta {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 24px;
+  color: #022b3a;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.insta:hover {
+  color: #e1306c;
+  transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
@@ -159,23 +218,26 @@ footer {
     margin-bottom: 50px;
   }
 
-  iframe {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px auto; 
-    width:275px;
-    height: 560px;
-    border: none;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-  }
-
   .photo {
     flex-direction: column;
     padding: 15px 15px 25px 15px;
     height: 100vh;
     flex-wrap: wrap;
   }
-  
+
+
+  .portfolio-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  } 
+  .portfolio-card {
+    width: 250px;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 40px;
+  }
+
 }
