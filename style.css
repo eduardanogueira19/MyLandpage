@@ -4,7 +4,9 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-
+html, body {
+  overflow-x: hidden;
+}
 body {
   background: #f9f9f9;
   color: #333;
@@ -56,7 +58,7 @@ body {
 }
 
 .section {
-  padding: 60px 20px;
+  padding: 50px 20px;
   max-width: 1000px;
   margin: auto;
   text-align: center;
@@ -85,6 +87,32 @@ li{
     background-color: #022B3A;
     color: #fff;
     transition: 0.7s;
+}
+.photo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 15px 15px 25px 15px;
+  margin: 20px auto; 
+  background-color: #022b3a;
+  border-radius: 130px;
+  color: #fff;
+  width: 90vw;
+  flex-wrap: wrap;
+}
+
+.photo p {
+  max-width: 600px;
+  text-align: left;
+}
+#myphoto {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 20px;
+  border: #ffff 2px solid;
 }
 
 iframe {
@@ -118,18 +146,36 @@ footer {
 
   .hero {
     height: 100vh;
+    
   }
 
+  .hero h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: 50px;
+  }
 
   iframe {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 650px;
+    margin: 20px auto; 
+    width:275px;
+    height: 560px;
     border: none;
     border-radius: 8px;
     border: 1px solid #ddd;
+  }
+
+  .photo {
+    flex-direction: column;
+    padding: 15px 15px 25px 15px;
+    height: 100vh;
+    flex-wrap: wrap;
   }
   
 }
