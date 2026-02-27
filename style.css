@@ -8,8 +8,8 @@ html, body {
   overflow-x: hidden;
 }
 body {
-  background: #f9f9f9;
-  color: #333;
+  background: #022B3A;
+  color: #f9f9f9;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -29,7 +29,7 @@ body {
 .hero {
   height: 50vh;
   width: 100vw;
-  background: #022B3A;
+  background: #5fbb9885;
   color: #f9f9f9;
   text-align: center;
   padding: 0px 0px;
@@ -99,7 +99,8 @@ li{
 }
 
 .card {
-  background: #f9f9f9;
+  background: #5FBB97;
+  color: #022B3A;
   padding: 30px;
   border-radius: 8px;
   width: 250px;
@@ -119,8 +120,8 @@ li{
   gap: 25px;
   padding: 15px 15px 25px 15px;
   margin: 20px auto; 
-  background-color: #022b3a;
-  color: #f9f9f9;
+  background-color: #5FBB97;
+  color: #022B3A;
   border-radius: 25px;
   width: 100%;
   flex-wrap: wrap;
