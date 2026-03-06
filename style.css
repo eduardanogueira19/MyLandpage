@@ -105,6 +105,7 @@ li{
   border-radius: 8px;
   width: 250px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  font-weight: 700;
 }
 
 .card:hover{
@@ -130,6 +131,7 @@ li{
 .photo p {
   max-width: 600px;
   text-align: left;
+  font-weight: 450;
 }
 
 #myphoto {
@@ -163,6 +165,7 @@ li{
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   transition: transform 0.3s;
   color:#022B3A;
+  
 }
 
 .portfolio-card:hover {
@@ -177,11 +180,13 @@ li{
 
 .portfolio-card h3 {
   margin: 15px 0 5px;
+
 }
 
 .portfolio-card p {
   font-size: 14px;
   padding: 0 15px;
+  font-weight: 450;
 }
 
 .portfolio-card a {
